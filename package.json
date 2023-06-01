@@ -8,6 +8,7 @@
     "lint:Check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:Fixed": "eslint --fix",
     "prettier:Check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prettier:Fixed": "prettier --write",
     "lint-prettier": "npm run lint:Check && npm run prettier:Check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
