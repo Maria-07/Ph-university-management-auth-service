@@ -15,8 +15,8 @@
 
   "rules": {
     "no-unused-vars": "error",
-    // "no-console": "error",
-    // "no-undef": "error",
+    "no-console": "warn",
+    "no-undef": "error",
     "no-unused-expressions": "error",
     "no-unreachable": "error"
     // "consistent-type-definitions": ["error", "type"]
@@ -24,6 +24,10 @@
 
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
+  },
+  "globals": {
+    "process": "readonly"
   }
 }

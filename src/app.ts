@@ -1,7 +1,7 @@
 import cors from 'cors'
 import express, { Application } from 'express'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
-import usersRouter from './app/modules/users/user.route'
+import { UserRoutes } from './app/modules/users/user.route'
 const app: Application = express()
 
 app.use(cors())
@@ -13,17 +13,16 @@ app.use(express.urlencoded({ extended: true }))
 //application routes
 // console.log(process.env.DATABASE_URL)
 
-app.use('/api/v1/user', usersRouter)
+app.use('/api/v1/user', UserRoutes)
 
 //testing purpose
-// app.get('/', async (req: Request, res: Response) => {
-//   // res.send('Working successfully')
-//   throw new Error('User not found')
-// })
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
-//   // res.send('Working successfully')
-//   // next('User not found') //Error
-//   throw new Error('User not found')
+//   throw new Error('testing new error logger')
+//   //   throw new ApiError(400, 'User not found throw error')
+// })
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   //   Promise.reject(new Error('UnHandle project rejection'))
+//   console.log(x)
 // })
 
 // global error handler
