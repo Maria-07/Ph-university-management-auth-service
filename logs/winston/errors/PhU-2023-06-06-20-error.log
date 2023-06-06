@@ -46,3 +46,15 @@
     "message": "role is required"
   }
 ] }
+[Tue Jun 06 2023 20:27:12 PUM] error: ❗🚀❗ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+] }
