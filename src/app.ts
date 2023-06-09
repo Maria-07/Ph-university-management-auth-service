@@ -1,7 +1,7 @@
 import cors from 'cors';
 import express, { Application } from 'express';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
-import { UserRoutes } from './app/modules/users/user.route';
+import routes from './app/routes';
 const app: Application = express();
 
 app.use(cors());
@@ -13,7 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 //application routes
 // console.log(process.env.DATABASE_URL)
 
-app.use('/api/v1/user', UserRoutes);
+// app.use('/api/v1/user', UserRoutes);
+// app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
+
+app.use('/api/v1/', routes);
 
 //testing purpose
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
