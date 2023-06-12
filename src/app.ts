@@ -1,7 +1,8 @@
 import cors from 'cors';
-import express, { Application } from 'express';
+import express, { Application, NextFunction, Request, Response } from 'express';
+import httpStatus from 'http-status';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
-import { UserRoutes } from './app/modules/users/user.route';
+import routes from './app/routes';
 const app: Application = express();
 
 app.use(cors());
@@ -13,7 +14,10 @@ app.use(express.urlencoded({ extended: true }));
 //application routes
 // console.log(process.env.DATABASE_URL)
 
-app.use('/api/v1/user', UserRoutes);
+// app.use('/api/v1/user', UserRoutes);
+// app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
+
+app.use('/api/v1/', routes);
 
 //testing purpose
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
@@ -27,5 +31,20 @@ app.use('/api/v1/user', UserRoutes);
 
 // global error handler
 app.use(globalErrorHandler);
+
+// Handle not found
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not Found',
+    errorMessages: [
+      {
+        path: req.originalUrl,
+        message: 'Api not found',
+      },
+    ],
+  });
+  next();
+});
 
 export default app;
