@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
-import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
+import { ErrorRequestHandler, Request, Response } from 'express';
 import { ZodError } from 'zod';
 import config from '../../config';
 import ApiError from '../../errors/ApiError';
@@ -14,8 +14,7 @@ import { loggerError } from '../../shared/logger';
 const globalErrorHandler: ErrorRequestHandler = (
   error,
   req: Request,
-  res: Response,
-  next: NextFunction
+  res: Response
 ) => {
   config.env === 'development'
     ? loggerError.error('❗🚀❗', error)
@@ -70,8 +69,6 @@ const globalErrorHandler: ErrorRequestHandler = (
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   });
-
-  next();
 };
 
 export default globalErrorHandler;
