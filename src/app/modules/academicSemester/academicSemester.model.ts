@@ -14,7 +14,7 @@ import {
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
     title: { type: String, enum: academicSemesterTitles, required: true },
-    year: { type: Number, required: true },
+    year: { type: String, required: true },
     code: { type: String, enum: academicSemesterCodes, required: true },
     startMonth: { type: String, required: true, enum: academicSemesterMonths },
     endMonth: { type: String, required: true, enum: academicSemesterMonths },
@@ -29,6 +29,7 @@ academicSemesterSchema.pre('save', async function (next) {
     title: this.title,
     year: this.year,
   });
+
   if (isExit) {
     throw new ApiError(httpStatus.CONFLICT, 'Academic Semester is Exist ❗❗');
   }

@@ -25,18 +25,18 @@ async function bootstrap() {
     loggerError.error('Failed to connect Database');
   }
 
-  process.on('unhandledRejection', error => {
-    console.log('unhandledRejection is detected, we are closing our server');
+  // process.on('unhandledRejection', error => {
+  //   console.log('unhandledRejection is detected, we are closing our server');
 
-    if (server) {
-      server.close(() => {
-        loggerError.error(error);
-        process.exit(1);
-      });
-    } else {
-      process.exit(1);
-    }
-  });
+  //   if (server) {
+  //     server.close(() => {
+  //       loggerError.error(error);
+  //       process.exit(1);
+  //     });
+  //   } else {
+  //     process.exit(1);
+  //   }
+  // });
 }
 
 bootstrap();
