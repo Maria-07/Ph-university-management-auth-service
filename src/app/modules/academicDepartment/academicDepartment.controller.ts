@@ -53,7 +53,7 @@ const getAllDepartments = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IAcademicDepartment[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Department get successfully',
+    message: 'Department Fetch successfully',
     meta: result.meta,
     data: result.data,
   });

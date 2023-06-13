@@ -25,6 +25,9 @@ const getAllDepartments = async (
   filters: IAcademicDepartmentFilter,
   paginationOption: IPaginationOption
 ): Promise<IGenericResponse<IAcademicDepartment[]>> => {
+  const { page, limit, skip, sortBy, sortOrder } =
+    paginationHelpers.calculationPagination(paginationOption);
+
   const { searchTerm, ...filtersData } = filters;
 
   const andCondition = [];
@@ -47,9 +50,6 @@ const getAllDepartments = async (
       })),
     });
   }
-
-  const { page, limit, skip, sortBy, sortOrder } =
-    paginationHelpers.calculationPagination(paginationOption);
 
   const sortConditions: { [key: string]: SortOrder } = {};
 

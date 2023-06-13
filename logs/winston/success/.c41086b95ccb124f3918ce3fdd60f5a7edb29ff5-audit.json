@@ -199,6 +199,11 @@
             "date": 1686585641037,
             "name": "D:\\LVL-2\\PH-University-managment\\PH-University-managment-auth-service\\logs\\winston\\success\\PhU-2023-12-06-22-success.log",
             "hash": "beb06735211a6943df1f8d959857efbb108d7f5c88c68845c324e8170e9e2473"
+        },
+        {
+            "date": 1686621832295,
+            "name": "D:\\LVL-2\\PH-University-managment\\PH-University-managment-auth-service\\logs\\winston\\success\\PhU-2023-13-06-08-success.log",
+            "hash": "58ac92811282109cfdb68019e0543f263fdc01b67a796f564a415bd1ff3d585f"
         }
     ],
     "hashType": "sha256"
