@@ -1,5 +1,5 @@
 import { SortOrder } from 'mongoose';
-import { academicFacultySearchableFields } from '../../../constance/searcableFields';
+import { academicFacultySearchableFields } from '../../../constance/searchableFields';
 import { paginationHelpers } from '../../../helpers/paginationHelpers';
 import {
   IGenericResponse,
