@@ -1,0 +1,140 @@
+[Thu Jun 15 2023 10:2:51 PUM] error: ❗🚀❗ 👉 Faculty of Communication A 🐼 is already Exist ❗❗ }
+[Thu Jun 15 2023 10:3:19 PUM] error: ❗🚀❗ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "name"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'male' | 'female'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "faculty",
+      "gender"
+    ],
+    "message": "Gender is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "dateOfBirth"
+    ],
+    "message": "Date of birth is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "email"
+    ],
+    "message": "Email is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "contactNo"
+    ],
+    "message": "Contact number is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "emergencyContactNo"
+    ],
+    "message": "Emergency contact number is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "presentAddress"
+    ],
+    "message": "Present address is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "permanentAddress"
+    ],
+    "message": "Permanent address is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "designation"
+    ],
+    "message": "Academic faculty is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "academicDepartment"
+    ],
+    "message": "Academic department is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "academicFaculty"
+    ],
+    "message": "Academic faculty is required"
+  }
+] }
+[Thu Jun 15 2023 10:6:37 PUM] error: ❗🚀❗ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty"
+    ],
+    "message": "Required"
+  }
+] }
+[Thu Jun 15 2023 10:8:13 PUM] error: ❗🚀❗ academicFaculty validation failed: title: Path `title` is required. }
+[Thu Jun 15 2023 10:10:44 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.students index: id_1 dup key: { id: "280300007" } }
+[Thu Jun 15 2023 10:11:40 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.students index: id_1 dup key: { id: "280300007" } }
+[Thu Jun 15 2023 10:15:27 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.students index: id_1 dup key: { id: "280300007" } }
