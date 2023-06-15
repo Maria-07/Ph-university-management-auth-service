@@ -10,7 +10,7 @@ import {
 import { IStudent, IStudentFilters } from './student.interface';
 import { Student } from './student.model';
 
-// get all faculty
+// get all student
 const getAllStudents = async (
   filters: IStudentFilters,
   paginationOption: IPaginationOption
@@ -69,7 +69,7 @@ const getAllStudents = async (
   };
 };
 
-// get a single Faculty
+// get a single student
 const getSingleStudent = async (id: string): Promise<IStudent | null> => {
   const result = await Student.findById(id)
     .populate('academicSemester')
@@ -78,7 +78,7 @@ const getSingleStudent = async (id: string): Promise<IStudent | null> => {
   return result;
 };
 
-// updated Faculty
+// updated student
 const updateStudent = async (
   id: string,
   payload: Partial<IStudent>
@@ -122,7 +122,7 @@ const updateStudent = async (
   return result;
 };
 
-// Delete Faculty
+// Delete student
 const deleteStudent = async (id: string): Promise<IStudent | null> => {
   const result = await Student.findByIdAndDelete({ _id: id }, { new: true })
     .populate('academicSemester')

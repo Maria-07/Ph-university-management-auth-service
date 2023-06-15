@@ -24,4 +24,13 @@ export type IFaculty = {
   academicDepartment: Types.ObjectId | IAcademicDepartment; // // reference _id
 };
 
-export type StudentModel = Model<IFaculty, Record<string, unknown>>;
+export type FacultyModel = Model<IFaculty, Record<string, unknown>>;
+
+export type IFacultyFilters = {
+  searchTerm?: string;
+  id?: string;
+  bloodGroup?: string;
+  email?: string;
+  contactNo?: string;
+  emergencyContactNo?: string;
+};

@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 import { bloodGroup, gender } from './faculty.constance';
-import { IFaculty } from './faculty.interface';
+import { FacultyModel, IFaculty } from './faculty.interface';
 
 const FacultySchema = new Schema<IFaculty>({
   id: { type: String, required: true },
@@ -36,4 +36,4 @@ const FacultySchema = new Schema<IFaculty>({
   },
 });
 
-export const Faculty = model<IFaculty>('Faculty', FacultySchema);
+export const Faculty = model<IFaculty, FacultyModel>('Faculty', FacultySchema);

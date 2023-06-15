@@ -8,7 +8,7 @@ import sendResponse from '../../../shared/sendResponse';
 import { IStudent } from './student.interface';
 import { StudentServices } from './student.service';
 
-// get a single semester
+// get a single Student
 const getSingleStudent = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
 
@@ -22,7 +22,7 @@ const getSingleStudent = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-// search and filter semester
+// search and filter Student
 const getAllStudents = catchAsync(async (req: Request, res: Response) => {
   const filters = pick(req.query, studentSearchableFields);
 
@@ -42,7 +42,7 @@ const getAllStudents = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-// Update semester
+// Update student
 const updateStudent = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
   const updatedData = req.body;
