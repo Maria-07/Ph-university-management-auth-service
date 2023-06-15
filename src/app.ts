@@ -19,6 +19,17 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1/', routes);
 
+// const academicSemester = {
+//   code: '01',
+//   year: '2025',
+// };
+
+// const testId = async () => {
+//   const testId = await generateFacultyId();
+//   console.log(testId);
+// };
+// testId();
+
 //testing purpose
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
 //   throw new Error('testing new error logger')

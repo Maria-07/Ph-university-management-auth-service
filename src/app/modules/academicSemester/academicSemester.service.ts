@@ -1,6 +1,6 @@
 import httpStatus from 'http-status';
 import { SortOrder } from 'mongoose';
-import { academicSemesterSearchableFields } from '../../../constance/searcableFields';
+import { academicSemesterSearchableFields } from '../../../constance/searchableFields';
 import ApiError from '../../../errors/ApiError';
 import { paginationHelpers } from '../../../helpers/paginationHelpers';
 import {
