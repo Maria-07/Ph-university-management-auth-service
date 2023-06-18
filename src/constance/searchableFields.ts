@@ -5,6 +5,7 @@ export const academicFacultySearchableFields = ['title'];
 export const academicDepartmentSearchableFields = ['title'];
 
 export const studentSearchableFields = [
+  'searchTerm',
   'id',
   'email',
   'contactNo',
