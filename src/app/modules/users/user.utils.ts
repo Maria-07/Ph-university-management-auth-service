@@ -2,6 +2,8 @@ import { IAcademicSemester } from '../academicSemester/academicSemester.interfac
 import { User } from './user.model';
 
 // last Users
+
+// ### STUDENT
 export const findLastStudentId = async () => {
   const lastStudent = await User.findOne({ role: 'student' }, { id: 1, _id: 0 })
     .sort({
@@ -10,6 +12,8 @@ export const findLastStudentId = async () => {
     .lean();
   return lastStudent?.id ? lastStudent.id.substring(4) : undefined;
 };
+
+// ### Faculty
 export const findLastFacultyId = async () => {
   const lastFaculty = await User.findOne({ role: 'faculty' }, { id: 1, _id: 0 })
     .sort({
@@ -19,7 +23,20 @@ export const findLastFacultyId = async () => {
   return lastFaculty?.id ? lastFaculty.id.substring(2) : undefined;
 };
 
-// generate Users
+// ### admin
+export const findLastAdminId = async (): Promise<string | undefined> => {
+  const lastFaculty = await User.findOne({ role: 'admin' }, { id: 1, _id: 0 })
+    .sort({
+      createdAt: -1,
+    })
+    .lean();
+
+  return lastFaculty?.id ? lastFaculty.id.substring(2) : undefined;
+};
+
+// generate Users:
+
+// student Users:
 export const generateStudentId = async (
   academicSemester: IAcademicSemester | null
 ): Promise<string> => {
@@ -47,4 +64,14 @@ export const generateFacultyId = async (): Promise<string> => {
   incrementedID = `F-${incrementedID}`;
 
   return incrementedID;
+};
+
+// Admin user
+export const generateAdminId = async (): Promise<string> => {
+  const currentId =
+    (await findLastAdminId()) || (0).toString().padStart(5, '0');
+  let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
+  incrementedId = `A-${incrementedId}`;
+
+  return incrementedId;
 };

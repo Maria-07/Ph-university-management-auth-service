@@ -21,3 +21,5 @@ export const facultySearchableFields = [
   'name.middleName',
   'name.lastName',
 ];
+
+export const managementDepartmentSearchableFields = ['title'];

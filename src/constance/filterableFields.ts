@@ -16,3 +16,5 @@ export const studentFilterableFields = [
   'contactNo',
   'emergencyContactNo',
 ];
+
+export const managementDepartmentFilterableFields = ['searchTerm', 'title'];
