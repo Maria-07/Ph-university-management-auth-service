@@ -1,0 +1,1 @@
+[Wed Jun 21 2023 10:58:5 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.admins index: email_1 dup key: { email: "admin@example.com" } }
