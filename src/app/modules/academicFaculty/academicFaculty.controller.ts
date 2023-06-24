@@ -41,6 +41,10 @@ const getSingleFaculty = catchAsync(async (req: Request, res: Response) => {
 
 // search and filter Faculties
 const getAllFaculties = catchAsync(async (req: Request, res: Response) => {
+  console.log(req.headers.authorization);
+
+  console.log('Request User =>', req.user);
+
   const filters = pick(req.query, AcademicFacultyFilterableFields);
 
   const paginationOption = pick(req.query, paginationFields);

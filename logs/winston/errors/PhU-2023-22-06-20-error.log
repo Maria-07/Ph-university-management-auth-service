@@ -1,0 +1,16 @@
+[Thu Jun 22 2023 20:13:14 PUM] error: ❗🚀❗ User does not exist }
+[Thu Jun 22 2023 20:19:7 PUM] error: ❗🚀❗ password is incorrect }
+[Thu Jun 22 2023 20:19:16 PUM] error: ❗🚀❗ User does not exist }
+[Thu Jun 22 2023 20:48:32 PUM] error: ❗🚀❗ [
+  {
+    "validation": "email",
+    "code": "invalid_string",
+    "message": "Invalid email",
+    "path": [
+      "body",
+      "student",
+      "email"
+    ]
+  }
+] }
+[Thu Jun 22 2023 20:57:39 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.students index: email_1 dup key: { email: "sopheie@example.com" } }
