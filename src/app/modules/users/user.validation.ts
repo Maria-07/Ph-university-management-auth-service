@@ -162,14 +162,13 @@ const createAdminZodSchema = z.object({
         required_error: 'Date of birth is required',
       }),
 
-      gender: z.string({
+      gender: z.enum([...gender] as [string, ...string[]], {
         required_error: 'Gender is required',
       }),
 
-      bloodGroup: z.string({
-        required_error: 'Blood group is required',
+      bloodGroup: z.enum([...bloodGroup] as [string, ...string[]], {
+        required_error: 'Gender is required',
       }),
-
       email: z
         .string({
           required_error: 'Email is required',

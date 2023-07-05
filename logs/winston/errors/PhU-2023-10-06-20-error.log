@@ -1,8 +1,0 @@
-[Sat Jun 10 2023 20:17:38 PUM] error: ❗🚀❗ }
-[Sat Jun 10 2023 20:23:8 PUM] error: ❗🚀❗ }
-[Sat Jun 10 2023 20:23:28 PUM] error: ❗🚀❗ }
-[Sat Jun 10 2023 20:27:23 PUM] error: ❗🚀❗ }
-[Sat Jun 10 2023 20:29:13 PUM] error: ❗🚀❗ }
-[Sat Jun 10 2023 20:29:40 PUM] error: ❗🚀❗ }
-[Sat Jun 10 2023 20:34:32 PUM] error: ❗🚀❗ }
-[Sat Jun 10 2023 20:37:45 PUM] error: ❗🚀❗ Cast to ObjectId failed for value "6483f0bd0128990198" (type string) at path "_id" for model "academicSemester" }

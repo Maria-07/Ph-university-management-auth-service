@@ -1,4 +1,0 @@
-[Fri Jun 16 2023 19:9:44 PUM] error: ❗🚀❗ Student not found ! }
-[Fri Jun 16 2023 19:10:24 PUM] error: ❗🚀❗ Student not found ! }
-[Fri Jun 16 2023 19:10:35 PUM] error: ❗🚀❗ Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: PH_University_Management.students index: contactNo_1 dup key: { contactNo: "2334545210" } }
-[Fri Jun 16 2023 19:17:20 PUM] error: ❗🚀❗ Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: PH_University_Management.students index: contactNo_1 dup key: { contactNo: "2334545210" } }

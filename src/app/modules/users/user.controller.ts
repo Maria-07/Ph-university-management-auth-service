@@ -18,6 +18,7 @@ const createStudent: RequestHandler = catchAsync(
     });
   }
 );
+
 const createFaculty: RequestHandler = catchAsync(
   async (req: Request, res: Response) => {
     const { faculty, ...userData } = req.body;

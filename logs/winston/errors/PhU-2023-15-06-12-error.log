@@ -1,3 +1,0 @@
-[Thu Jun 15 2023 12:48:37 PUM] error: ❗🚀❗ Cast to ObjectId failed for value "F-00002" (type string) at path "_id" for model "Faculty" }
-[Thu Jun 15 2023 12:49:25 PUM] error: ❗🚀❗ Cast to ObjectId failed for value "280300007" (type string) at path "_id" for model "Student" }
-[Thu Jun 15 2023 12:50:37 PUM] error: ❗🚀❗ Cannot populate path `academicSemester` because it is not in your schema. Set the `strictPopulate` option to false to override. }
