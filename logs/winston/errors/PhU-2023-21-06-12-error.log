@@ -1,5 +1,0 @@
-[Wed Jun 21 2023 12:6:52 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.students index: email_1 dup key: { email: "sophie.mar454ia@example.com" } }
-[Wed Jun 21 2023 12:7:10 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.students index: contactNo_1 dup key: { contactNo: "1234536783402" } }
-[Wed Jun 21 2023 12:7:18 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.students index: contactNo_1 dup key: { contactNo: "1234536783402" } }
-[Wed Jun 21 2023 12:10:7 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.admins index: contactNo_1 dup key: { contactNo: "+1234567890" } }
-[Wed Jun 21 2023 12:39:32 PUM] error: ❗🚀❗ E11000 duplicate key error collection: PH_University_Management.admins index: email_1 dup key: { email: "admin1@example.com" } }
